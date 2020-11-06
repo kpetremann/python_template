@@ -1,3 +1,12 @@
+## What it includes
+
+Set for python3.8
+
+- Linters: pylint, mypy, pycodestyle, pydocstyle
+- Code analysis: pytest, bandit
+- Auto format: black, isort, unimport
+- Build: tox, setuptools, pex
+
 ## Bootstrap
 
 ```bash
