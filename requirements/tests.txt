@@ -1,5 +1,7 @@
-black
+bandit
+black==19.10b0
 coverage
+isort
 mypy
 pydocstyle
 pykwalify
@@ -9,3 +11,4 @@ pytest
 requests-mock
 setuptools
 tox
+unimport
