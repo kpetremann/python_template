@@ -11,4 +11,3 @@ pytest
 requests-mock
 setuptools
 tox
-unimport
