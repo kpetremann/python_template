@@ -23,6 +23,21 @@ Put your code in `app/`
 > - autoformat.sh
 > - check_grammar.sh
 
+## Run your app
+
+Two possibilies:
+
+Run the start script:
+```bash
+python start.py
+```
+
+Install the PEX in your environment, and run it:
+```bash
+pip install -e .  # To do only once
+run-app
+```
+
 ## Autoformat script
 
 The template configuration includes: black, isort and unimport.

@@ -1,4 +1,6 @@
 """Main code."""
 
-if __name__ == "__main__":
+
+def main():
+    """Entrypoint."""
     print("Hello world!")
