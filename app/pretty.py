@@ -1,5 +1,5 @@
 """Prettier stacktrace."""
-import pretty_errors
+import pretty_errors  # type: ignore
 
 
 def simple():
