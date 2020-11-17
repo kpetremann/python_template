@@ -6,6 +6,7 @@ Set for python3.8
 - Code analysis: pytest, bandit
 - Auto format: black, isort, unimport
 - Build: tox, setuptools, pex
+- Pretty stacktraces: pretty-errors
 
 ## Bootstrap
 
