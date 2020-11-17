@@ -21,8 +21,6 @@ Put your code in `app/`
 > :warning: **NOTE**: If you add or rename the packages at root level (app/), you need to update the following files:
 > - tox.ini
 > - setup.py
-> - autoformat.sh
-> - check_grammar.sh
 
 ## Run your app
 
@@ -43,9 +41,9 @@ run-app
 
 The template configuration includes: black, isort and unimport.
 
-They can all be executed in the righ order thanks to this script:
+They can all be executed in the righ order thanks to tox:
 ```bash
-bash autoformat.sh
+tox -e format
 ```
 
 ## Lint and build

@@ -1,1 +1,0 @@
-codespell website --skip="*.png,*.js,*.pyc,*.jpg,*.ttf,*.eot,*.woff2,*.sqlite3,*.gif,*.webp,*.html,*.css"
