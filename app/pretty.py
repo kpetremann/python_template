@@ -1,9 +1,15 @@
 """Prettier stacktrace."""
-import pretty_errors  # type: ignore
+try:
+    import pretty_errors  # type: ignore
+except ImportError:
+    pass
 
 
 def simple():
     """Set simple and pretty stacktrace."""
+    if not pretty_errors:
+        return
+
     pretty_errors.configure(
         separator_character="*",
         filename_display=pretty_errors.FILENAME_EXTENDED,
@@ -18,6 +24,9 @@ def simple():
 
 def full():
     """Set more verbose stacktrace."""
+    if not pretty_errors:
+        return
+
     pretty_errors.configure(
         separator_character="*",
         filename_display=pretty_errors.FILENAME_EXTENDED,
