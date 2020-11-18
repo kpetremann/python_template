@@ -8,6 +8,7 @@ pykwalify
 pylama
 pylint
 pytest
+pytest-mock
 requests-mock
 setuptools
 tox
