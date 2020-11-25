@@ -16,6 +16,11 @@ source .venv/bin/activate
 pip install -r requirements/dev.txt
 ```
 
+Or using invoke (you need invoke package to be installed on your system):
+```bash
+invoke install
+```
+
 Put your code in `app/`
 
 > :warning: **NOTE**: If you add or rename the packages at root level (app/), you need to update the following files:
@@ -23,8 +28,6 @@ Put your code in `app/`
 > - setup.py
 
 ## Run your app
-
-Two possibilies:
 
 Run the start script:
 ```bash
@@ -37,6 +40,11 @@ pip install -e .  # To do only once
 run-app
 ```
 
+Run from invoke:
+```bash
+invoke start
+```
+
 ## Autoformat script
 
 The template configuration includes: black, isort and unimport.
@@ -44,6 +52,11 @@ The template configuration includes: black, isort and unimport.
 They can all be executed in the righ order thanks to tox:
 ```bash
 tox -e format
+```
+
+It can also be triggered with invoke:
+```bash
+invoke reformat
 ```
 
 ## Lint and build
