@@ -17,7 +17,7 @@ _REQUIREMENTS_FILES = ["requirements/base.txt"]
 
 for req in _REQUIREMENTS_FILES:
     _REQUIREMENTS_TXT = _read_reqs(req)
-    _INSTALL_REQUIRES.extend([line for line in _REQUIREMENTS_TXT if "://" not in line])
+    _INSTALL_REQUIRES.extend([line for line in _REQUIREMENTS_TXT])
 
 setuptools.setup(
     name="app",
