@@ -1,5 +1,5 @@
 bandit
-black==19.10b0
+black
 coverage
 invoke
 isort
