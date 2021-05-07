@@ -2,7 +2,7 @@
 
 ## What it includes
 
-Set for python3.8
+Set for python3.9
 
 - Linters: pylint, mypy, pycodestyle, pydocstyle
 - Code analysis: pytest, bandit
