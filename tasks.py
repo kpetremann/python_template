@@ -26,4 +26,4 @@ def reformat(cmd):
 def start(cmd):
     """Start the app."""
     with cmd.prefix(f"source {PATH}/.venv/bin/activate"):
-        cmd.run(f"python {PATH}/start.py")
+        cmd.run(f"python {PATH}/start.py", pty=True)
