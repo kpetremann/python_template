@@ -18,6 +18,7 @@ def install(cmd):
 def reformat(cmd):
     """Auto format using black and isort."""
     with cmd.prefix(f"source {PATH}/.venv/bin/activate"):
+        cmd.run(f"unimport --gitignore -p --exclude '__init__.py' {PATH}/")
         cmd.run(f"isort {PATH}/")
         cmd.run(f"black {PATH}/")
 
